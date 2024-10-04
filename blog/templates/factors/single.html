@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>고립탈출 대작전</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- <link rel="stylesheet" href="/static/css/test.css"> -->
+      <!-- bootstrap css -->
+      <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="/static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="/static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="/static/css/owl.carousel.min.css"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- top -->
+         <!-- header -->
+            <!-- navbar -->
+
+         <!-- navbar -->
+         <nav class="site-navbar ">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="/">IsolationZero</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>               
+               <ul>
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:about' %}">분석배경</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'blog:method' %}">분석방법</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="{% url 'blog:factors' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       관련요인
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="{% url 'blog:ages' %}">연령대</a></li>
+                       <li><a class="dropdown-item" href="{% url 'blog:group' %}">단체참여</a></li>                       
+                       <li><a class="dropdown-item" href="{% url 'blog:spouse' %}">배우자</a></li>                       
+                       <li><a class="dropdown-item" href="{% url 'blog:single' %}">1인가구</a></li>
+                       <li><a class="dropdown-item" href="{% url 'blog:metropolitan' %}">지역</a></li>
+                       
+                     </ul>
+                   </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:how' %}">How</a>
+                  </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:references' %}">references</a>
+                  </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:env' %}">개발환경</a>
+                  </li>
+               </ul>
+               <hr>
+            </div>        
+         </nav>
+      <div class="full_bg"></div>
+      <!-- nav 끝  -->
+   
+      <!-- 메인 내용 -->
+         <!-- protect -->
+         <div class="coronata">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>가구유형 구분 및 분석</h2>
+                  </div>
+               </div>
+            </div>
+         </hr>
+      </div>
+      <!-- end protect -->
+        
+
+              <!-- 글 그림 -->
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex grid">
+
+               <div class="col-md-12 oder1">
+                  <!-- <hr> -->
+                  <div class="titlepage text_align_left">
+
+                     
+                     <!-- <h2>가구유형 구분 및 분석</h2> -->
+                     <p><br>
+                        가구유형을 구분하기 위해, 기존 <strong>가구일련번호</strong>를 활용했습니다.</p>
+                     <ul><br>
+                        <li>여러 해의 사회조사 데이터를 합친 관계로, 같은 가구일련번호가 항상 같은 가구를 의미하지 않을 수 있었습니다.</li>
+                        <li>따라서 <strong>년도와 가구일련번호</strong>를 묶고, <strong>가구인원수</strong>에 따라 <strong>1인 가구</strong>와 <strong>비 1인 가구</strong>로 나누었습니다.</li>
+                     </ul>
+        
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end 글 그림 -->
+                        <!-- 글 그림 -->
+      
+         <div class="container">
+            <div class="row d_flex grid">
+
+               <div class="col-md-12 oder1">
+                  <hr>
+                  <div class="titlepage text_align_center">
+
+                     <h3>노년 1인 가구와 <br>
+                        비 1인가구의 사회적고립도 히트맵</h3>
+                     
+                     <div class="coronata_img text_align_center">
+                        <figure><img src="/media/old_single.png" alt="#"/></figure>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end 글 그림 -->
+              <!-- 글 그림 -->
+      
+         <div class="container">
+            <div class="row d_flex grid">
+
+               <div class="col-md-12 oder1">
+                  <hr>
+                  <div class="titlepage text_align_left">
+
+                     <h3>Mann-Whitney U 검정 결과</h3>
+                     <p><br>
+                        이렇게 가구유형을 나눈 후 <strong>Mann-Whitney U 검정</strong>을 사용했습니다.<br>
+                        <br><br>
+                        검정 결과, <strong>1인 가구</strong>가 <strong>비 1인 가구</strong>보다 고립도가 유의미하게 높다는 사실을 확인할 수 있었습니다.<br>
+                        <strong> p-value는 1.86e-59</strong>로, 통계적으로 매우 유의미했습니다.
+                     </p>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end 글 그림 -->
+               <!-- 글 그림 -->
+      
+         <div class="container">
+            <div class="row d_flex grid">
+
+               <div class="col-md-12 oder1">
+                  <hr>
+                  <div class="titlepage text_align_left">              
+                     <h3>이론적 배경</h3>
+                     <p><br>
+                        1인 가구는 타인과의 상호작용 기회가 적고, 특히 노년층 1인 가구는 사회적 지지망이 약해<br>
+                        고립을 더 심하게 느낄 수 있다는 결론을 얻었습니다.<br>
+                        <br>
+                        <strong>Klinenberg</strong> 또한 1인 가구의 증가에 따른 사회적 변화를 연구하면서,<br>
+                        1인 가구가 타인과의 상호작용 기회가 적고 사회적 고립을 더 강하게 느낀다는 점을 강조했습니다.<br><br>
+
+                        그는 특히 노년층 1인 가구가 심리적 고립을 더 심하게 경험한다고 주장하며,<br>
+                        이는 사회적 고립이 신체적, 정신적 건강에 미치는 부정적인 영향을 증가시킬 수 있다고 설명했습니다.
+                     </p>           
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+         <!-- end 글 그림 -->
+
+
+
+      <!-- factors 페이지네이션 (페이지 연결하고 수정 예정) -->
+   </div>
+   <div class="protect_bg">
+      <div class="container">
+         
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage text_align_center">
+               <hr>
+               <h3>관련 요인</h3>
+               
+               <hr>
+               <!--  Demos -->
+               <div class="owl-carousel owl-theme">
+                  <div class="item">
+                     <div class="protect_box text_align_center">
+                     <div class="desktop">
+                        <i><img src="https://images.pexels.com/photos/3823542/pexels-photo-3823542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="#"/></i>
+                        <h4> <br>연령대별 </h4>
+                        <div class = "word"> Erikson의 이론에 따르면, 노년기에 고립은 절망감을 증가시킬 수 있습니다. 우리의 결과는 이 이론을 지지하며, 노년층의 고립도 문제를 심각하게 받아들여야 합니다.</div>
+                     </div>
+                        <a class="read_more" href="{% url 'blog:ages' %}">Read More</a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="protect_box text_align_center">
+                     <div class="desktop">
+                        <i><img src="https://images.pexels.com/photos/8861582/pexels-photo-8861582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="#"/></i>
+                        <h4> <br>1인가구 vs 비1인가구</h4>                                 
+                        <div class = "word"> Cohen의 연구에 따르면, 사회적 지지 부족은 스트레스를 증대시키고 건강을 악화시킬 수 있습니다. 1인가구 노년층의 고립도 문제를 해결하려면, 이들을 위한 사회적 지지망 구축이 필요합니다</div>
+                     </div>
+                        <a class="read_more" href="{% url 'blog:single' %}">Read More</a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="protect_box text_align_center">
+                     <div class="desktop">
+                        <i><img src="https://images.pexels.com/photos/5713612/pexels-photo-5713612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="#"/></i>
+                        <h4> <br>단체참여 여부</h4>
+                        <div class = "word"> Deci와 Ryan의 자기결정 이론에 따르면, 관계성 욕구는 심리적 건강에 매우 중요합니다. 단체 참여는 이러한 욕구를 충족시킴으로써 고립도를 줄일 수 있습니다</div>
+                     </div>
+                        <a class="read_more" href="{% url 'blog:group' %}">Read More</a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="protect_box text_align_center">
+                        <div class="desktop">
+                           <i><img src="https://images.pexels.com/photos/8972578/pexels-photo-8972578.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="#"/></i>
+                           <h4> <br>배우자 유무</h4>
+                           <div class = "word"> Cacioppo의 연구에 따르면, 고독은 신체적, 정신적 건강을 해칠 수 있습니다. 배우자가 없는 노년층에 대한 추가적인 사회적 지원이 절실합니다</div>
+                        </div>
+                           <a class="read_more" href="{% url 'blog:spouse' %}">Read More</a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="protect_box text_align_center">
+                        <div class="desktop">
+                           <i><img src="https://images.pexels.com/photos/5613942/pexels-photo-5613942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="#"/></i>
+                        <h4> <br>지역적 요인</h4>
+                        <div class = "word">Masten의 연구에 따르면, 회복력은 역경을 극복하는 데 중요한 요소입니다. 지역사회 자원과 지지망이 노년층의 건강과 고립도에 영향을 미칠 수 있습니다</div>
+                        </div>
+                     <a class="read_more" href="{% url 'blog:metropolitan' %}">Read More</a>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- factors 페이지네이션 끝-->
+     
+
+      </div>
+      <!-- 빈공간 -->
+          <!-- 빈공간 -->
+   <div class="update">
+      <div class="cevery_white">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2> </h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </div>
+   <!-- 빈공간 -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">            
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/"> Free html Templates</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="/static/js/jquery.min.js"></script>
+      <script src="/static/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="/static/js/owl.carousel.min.js"></script>
+      <script src="/static/js/custom.js"></script>
+   </body>
+</html>

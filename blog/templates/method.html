@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>고립탈출 대작전</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- <link rel="stylesheet" href="/static/css/test.css"> -->
+      <!-- bootstrap css -->
+      <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="/static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="/static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="/static/css/owl.carousel.min.css"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- top -->
+         <!-- header -->
+
+         <!-- navbar -->
+         <nav class="site-navbar ">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="/">IsolationZero</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>               
+               <ul>
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:about' %}">분석배경</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'blog:method' %}">분석방법</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="{% url 'blog:factors' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       관련요인
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="{% url 'blog:ages' %}">연령대</a></li>
+                       <li><a class="dropdown-item" href="{% url 'blog:group' %}">단체참여</a></li>                       
+                       <li><a class="dropdown-item" href="{% url 'blog:spouse' %}">배우자</a></li>                       
+                       <li><a class="dropdown-item" href="{% url 'blog:single' %}">1인가구</a></li>
+                       <li><a class="dropdown-item" href="{% url 'blog:metropolitan' %}">지역</a></li>
+                       
+                     </ul>
+                   </li>
+            
+
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:how' %}">How</a>
+                  </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:references' %}">references</a>
+                  </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:env' %}">개발환경</a>
+                  </li>
+               </ul>
+               <hr>
+            </div>        
+         </nav>
+      <div class="full_bg"></div>
+      <!-- nav 끝  -->
+               
+   
+      <!-- 메인 내용 -->
+        
+     <!-- 글 그림 -->
+      <div class="coronata">
+         <div class="container">
+            <div class="row d_flex grid">
+
+               <div class="col-md-12 oder1">
+                  <div class="titlepage text_align_left">
+
+                     <h2>데이터 및 방법론 </h2>
+                     
+                     <p><br>
+                        저희는 노년층의 사회적 고립도를 다각적으로 분석하기 위해 주로<br> <br>
+                        <li>
+                        - 통계청의 사회조사데이터<br>
+                        - 통계청의 사망원인통계<br></li><br>
+                        <!-- - 보건복지부의 2023 노인복지시설 현황 <br></strong> -->
+                        <p>데이터를 사용했습니다.</p>
+                     </p>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end 글 그림 -->
+
+
+<!-- 연구가설 -->
+           <!-- 글 그림 -->
+           <div class="coronata">
+            <div class="container">
+               <div class="row d_flex grid">
+                  <div class="coronata_img text_align_center">
+                     <figure><img src="https://fastly.picsum.photos/id/885/1200/200.jpg?hmac=D8C8u_FrWRCe2Tkj6C6mgQichpP3zLTHDuOyPnwQ-Uc" ></figure>
+                  </div>
+                  <hr>   
+                  <div class="col-md-12 oder1">
+                     <div class="titlepage text_align_left">
+<hr>
+                     <h2>1. 사회조사 데이터</h2>
+                     <p><br><br>
+                        <strong>사회적 고립도를 평가</strong>하는 데 중요한 요인들은 다음과 같습니다:<br></p>
+                     <li>
+                        &nbsp;&nbsp;&nbsp;&nbsp; - 연령대<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; – 가구 유형<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; – 단체참여 여부<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; – 배우자 유무<br><br>
+                     </li>
+
+                     <p><strong>사회적 고립도를 평가하기 위해 선택한 주요 조사 항목</strong>은 다음과 같습니다:<br></p>
+                     <li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;  – 가사 도움 요청 대상 유무<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;  – 대화 상대 도움 요청 대상 유무<br>
+                     </li>
+                     <p>
+                     이 두 컬럼은 <strong>정서적·사회적 고립</strong>과 관련 있으며,<br><br></p>
+                     
+                     <p>
+                     일상적 도움과의 공통점이 있어 <strong>사회적 고립도의 지표</strong>로 선정되었습니다. <br>
+                     저희는 이 항목들을 결합하여, <strong>사회적 고립도를 3단계</strong>로 분류했습니다:<br></p>
+                     <li>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 2: 낮은 수준<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 3: 중간 수준<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 4: 높은 수준<br><br><br></li>
+
+                     <h3>고립도 설정의 이유</h3>
+                     <p><br><strong>사회적 고립을 순서형 변수</strong>로 설정한 이유는 고립의 <strong>심각성을 명확히 나타내기 위함</strong>입니다. <br>
+                        고립은 단순한 <strong>"있다/없다"</strong>의 이분법적인 개념이 아니라, <strong>연속적인 스펙트럼</strong>으로 존재합니다. <br><br>
+                        고립 정도를 계층화함으로써 <strong>심각성의 차이</strong>를 표현하고,<br>
+                         <strong>사회적 고립이 건강과 사망률</strong> 등에 미치는 영향을 정량적으로 분석할 수 있었습니다.</p>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end 글 그림 -->
+
+
+
+   <!-- 분석방법 -->
+           <!-- 글 그림 -->
+           <div class="coronata">
+            <div class="container">
+               <div class="row d_flex grid">
+
+                  <div class="col-md-12 oder1">
+                     <div class="titlepage text_align_left">
+   <hr>
+                        <h2>2. 사망원인통계 데이터</h2>
+                     
+                        <p><br>저희는 <strong>KCD(한국표준질병사인분류)</strong> 기준으로 사망 원인을 분류한 <strong>사망원인1코드</strong>를 사용하여 <br>
+                           <strong>심혈관 질환</strong>과 <strong>인지 장애</strong>로 인한 사망자 데이터를 분리했습니다. <br><br>
+                           데이터에서 <strong>우울</strong>과 <strong>불안</strong> 관련 사례가 적어 해당 항목을 분석에서 제외하고, <br>
+                           심혈관 질환과 인지 장애에 중점을 두어 분석을 진행했습니다.<br><br></p>
+                        
+                        <p> <strong>사회적 고립</strong>이 노년층의 건강에 미치는 영향을 분석하고자 했습니다. <br>
+                           사회조사는 살아있는 사람들의 데이터이고, 사망원인통계는 이미 사망한 사람들의 데이터이므로 개인 단위의 비교는 불가능했습니다.<br>
+                           따라서 집단 단위에서 <strong>사회적 고립도와 사망률</strong>의 연관성을 분석했습니다.<br><br></p>
+                        
+                        <h3>분석 결과</h3>
+                        <p>저희는 노년층의 사회적 고립도를 탐구하며, 어떤 요인들이 고립도에 영향을 미치고, 고립도가 건강에 미치는 영향을 규명하고자 여러 가설을 검정했습니다.</p>
+                  
+                              
+                        </div>
+   
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end 글 그림 -->
+ 
+
+         <!-- 글 -->
+         <div class="coronata">
+            <div class="container">        
+               <div class="row d_flex grid">
+
+                  <div class="col-md-8 oder1">
+                     <div class="titlepage text_align_left">          
+               
+                  
+                        <p>이렇게 다양한 통계 분석 방법을 통해,<br>
+                              저희는 노년층의 사회적 고립도에 영향을 미치는 주요 요인들을 확인하고, <br>
+                              이를 바탕으로 고립을 완화할 수 있는 정책적 시사점을 도출하고자 했습니다. <br>
+                              이제 각 분석 결과에 대해 구체적으로 살펴보겠습니다.
+                           
+                        </p>               
+                     </div>
+                  </div>
+                  <div class="col-md-4 oder1">
+                     <div class="titlepage text_align_left">  
+                        <a class="read_more" href="{% url 'blog:factors' %}">fcators</a>
+                     </div>
+                  </div>
+               </div>  
+            </div>          
+         </div>
+         <!-- end 글 -->
+
+
+         
+     
+
+      </div>
+      <!-- 빈공간 -->
+          <!-- 빈공간 -->
+   <div class="update">
+      <div class="cevery_white">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2> </h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </div>
+   <!-- 빈공간 -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">            
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/"> Free html Templates</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="/static/js/jquery.min.js"></script>
+      <script src="/static/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="/static/js/owl.carousel.min.js"></script>
+      <script src="/static/js/custom.js"></script>
+   </body>
+</html>
